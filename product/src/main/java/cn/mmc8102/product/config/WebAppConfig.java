@@ -1,6 +1,6 @@
 package cn.mmc8102.product.config;
 
-import cn.mmc8102.springboot.web.interceptor.NotXssInjectionInterceptor;
+import cn.mmc8102.common.interceptor.NotXssInjectionInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

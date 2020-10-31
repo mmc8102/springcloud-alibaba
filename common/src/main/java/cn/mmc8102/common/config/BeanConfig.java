@@ -1,4 +1,4 @@
-package cn.mmc8102.config;
+package cn.mmc8102.common.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.MessageSource;

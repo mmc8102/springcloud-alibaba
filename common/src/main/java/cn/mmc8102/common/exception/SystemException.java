@@ -1,6 +1,6 @@
-package cn.mmc8102.exception;
+package cn.mmc8102.common.exception;
 
-import cn.mmc8102.response.ApiResponseEnum;
+import cn.mmc8102.common.response.ApiResponseEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

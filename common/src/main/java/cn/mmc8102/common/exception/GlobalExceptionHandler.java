@@ -1,8 +1,8 @@
-package cn.mmc8102.exception;
+package cn.mmc8102.common.exception;
 
-import cn.mmc8102.response.ApiResponse;
-import cn.mmc8102.response.ApiResponseEnum;
-import cn.mmc8102.response.I18nService;
+import cn.mmc8102.common.response.ApiResponse;
+import cn.mmc8102.common.response.ApiResponseEnum;
+import cn.mmc8102.common.response.I18nService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.HttpMessageConversionException;

@@ -1,4 +1,4 @@
-package cn.mmc8102.util;
+package cn.mmc8102.common.util;
 
 /**
  * 系统中的常量

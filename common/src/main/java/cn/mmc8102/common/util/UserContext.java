@@ -1,4 +1,4 @@
-package cn.mmc8102.util;
+package cn.mmc8102.common.util;
 
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;

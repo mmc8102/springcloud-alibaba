@@ -1,4 +1,4 @@
-package cn.mmc8102.response;
+package cn.mmc8102.common.response;
 
 /**
  * @author wangli
