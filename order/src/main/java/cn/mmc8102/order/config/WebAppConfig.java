@@ -1,6 +1,5 @@
 package cn.mmc8102.order.config;
 
-import cn.mmc8102.common.interceptor.NotXssInjectionInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -15,6 +14,6 @@ public class WebAppConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new NotXssInjectionInterceptor()).addPathPatterns("/**");
+        //registry.addInterceptor(new NotXssInjectionInterceptor()).addPathPatterns("/**");
     }
 }
