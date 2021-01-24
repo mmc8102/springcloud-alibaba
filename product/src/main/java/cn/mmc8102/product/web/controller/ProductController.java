@@ -30,6 +30,11 @@ public class ProductController {
     public Product product(@PathVariable("pid") Integer pid) {
         log.info("接下来要进行{}号商品信息的查询", pid);
         Product product = productService.findByPid(pid);
+        /*try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
         log.info("商品信息查询成功,内容为{}", JsonTool.toJson(product));
         return product;
     }
