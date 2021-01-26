@@ -55,4 +55,8 @@ rocketmq:
   producer:
     group: shop-order # 生产者组
 
+feign:
+  sentinel:
+    enabled: true
+
 

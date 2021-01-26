@@ -1,5 +1,6 @@
 package cn.mmc8102.order.service;
 
+import cn.mmc8102.common.domain.Order;
 import cn.mmc8102.common.domain.Product;
 
 /**
@@ -12,5 +13,5 @@ public interface IOrderService {
      * 添加订单
      * @param pid
      */
-    Product add(Integer pid);
+    Order add(Integer pid);
 }

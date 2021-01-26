@@ -35,6 +35,7 @@ public class ProductController {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }*/
+        //int i = 1/0;
         log.info("商品信息查询成功,内容为{}", JsonTool.toJson(product));
         return product;
     }

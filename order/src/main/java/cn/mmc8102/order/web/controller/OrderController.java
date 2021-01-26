@@ -23,11 +23,6 @@ public class OrderController {
     @RequestMapping("/create/{pid}")
     public ApiResponse order(@PathVariable("pid") Integer pid) {
         log.info("接收到{}号商品的下单请求,接下来调用商品微服务查询此商品信息", pid);
-        /*try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
 
         return new ApiResponse(orderService.add(pid));
     }
