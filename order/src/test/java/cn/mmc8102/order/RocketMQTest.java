@@ -1,6 +1,6 @@
 package cn.mmc8102.order;
 
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
+/*import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
@@ -10,9 +10,10 @@ import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.apache.rocketmq.remoting.exception.RemotingException;*/
 import org.junit.Test;
 
+import javax.websocket.SendResult;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
@@ -22,7 +23,7 @@ import java.util.List;
  */
 public class RocketMQTest {
 
-    @Test
+    /*@Test
     public void testRocketMQProduct() throws MQClientException, UnsupportedEncodingException, RemotingException, InterruptedException, MQBrokerException {
         DefaultMQProducer producer = new DefaultMQProducer("hello-producer");
         producer.setNamesrvAddr("127.0.0.1:9876");
@@ -49,5 +50,5 @@ public class RocketMQTest {
             }
         });
         consumer.start();
-    }
+    }*/
 }

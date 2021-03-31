@@ -1,6 +1,7 @@
 package cn.mmc8102.order.service.fallback;//package com.itheima.service.fallback;
 
 import cn.mmc8102.common.domain.Product;
+import cn.mmc8102.common.response.ApiResponse;
 import cn.mmc8102.order.service.IProductService;
 import feign.hystrix.FallbackFactory;
 import lombok.extern.slf4j.Slf4j;
@@ -19,10 +20,10 @@ public class ProductServiceFallbackFactory implements FallbackFactory<IProductSe
         //Throwable  这就是fegin在调用过程中产生异常
         return new IProductService() {
             @Override
-            public Product get(Integer pid) {
+            public ApiResponse<Product> get(Integer pid) {
                 log.error("product exception {}",throwable);
                 Product product = new Product();
-                return product;
+                return new ApiResponse<>(product);
             }
         };
     }

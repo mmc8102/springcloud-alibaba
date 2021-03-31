@@ -1,6 +1,8 @@
 package cn.mmc8102.product.web.controller;
 
 import cn.mmc8102.common.domain.Product;
+import cn.mmc8102.common.response.ApiResponse;
+import cn.mmc8102.common.response.ApiResponseEnum;
 import cn.mmc8102.common.util.JsonTool;
 import cn.mmc8102.product.service.IProductService;
 import com.alibaba.fastjson.JSON;
@@ -27,7 +29,7 @@ public class ProductController {
      * @return
      */
     @RequestMapping("/get/{pid}")
-    public Product product(@PathVariable("pid") Integer pid) {
+    public ApiResponse product(@PathVariable("pid") Integer pid) {
         log.info("接下来要进行{}号商品信息的查询", pid);
         Product product = productService.findByPid(pid);
         /*try {
@@ -37,7 +39,7 @@ public class ProductController {
         }*/
         //int i = 1/0;
         log.info("商品信息查询成功,内容为{}", JsonTool.toJson(product));
-        return product;
+        return new ApiResponse(ApiResponseEnum.ERROR);
     }
 
 }

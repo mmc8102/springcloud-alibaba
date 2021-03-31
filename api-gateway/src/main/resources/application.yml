@@ -13,7 +13,10 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        #server-addr: 127.0.0.1:8848
+        server-addr: tj1-b2c-systech-mione-test03.kscn:80
+        username: nacos
+        password: nacos
     gateway:
       discovery:
         locator:
